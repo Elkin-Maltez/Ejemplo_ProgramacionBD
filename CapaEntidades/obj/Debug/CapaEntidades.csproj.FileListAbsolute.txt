@@ -1,0 +1,5 @@
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaEntidades\bin\Debug\CapaEntidades.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaEntidades\bin\Debug\CapaEntidades.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaEntidades\obj\Debug\CapaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaEntidades\obj\Debug\CapaEntidades.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaEntidades\obj\Debug\CapaEntidades.pdb

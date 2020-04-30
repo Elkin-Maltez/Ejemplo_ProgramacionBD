@@ -1,0 +1,11 @@
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaEntidades.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\bin\Debug\CapaEntidades.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\CapaNegocio\obj\Debug\CapaNegocio.pdb
