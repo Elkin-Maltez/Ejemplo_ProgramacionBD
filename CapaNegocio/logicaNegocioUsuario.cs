@@ -24,7 +24,7 @@ namespace CapaNegocio
         {
             return adu.eliminarUsuario(idusuar);
         }
-        public int editarComentarios(Usuario us)
+        public int editarUsuario(Usuario us)
         {
             return adu.EditarUsuario(us);
         }

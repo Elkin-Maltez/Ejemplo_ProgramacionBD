@@ -66,7 +66,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.BackColor = System.Drawing.Color.SpringGreen;
+            this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.textBoxDescripcion);
             this.tabPage1.Controls.Add(this.textBoxCodigo);
@@ -138,7 +138,6 @@
             this.labelDescripcion.Size = new System.Drawing.Size(119, 24);
             this.labelDescripcion.TabIndex = 4;
             this.labelDescripcion.Text = "Descripción";
-            this.labelDescripcion.Click += new System.EventHandler(this.labelDescripcion_Click);
             // 
             // labelCodigo
             // 
@@ -186,7 +185,7 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.SpringGreen;
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.dataGridViewRecursos);
             this.tabPage2.Controls.Add(this.buttonEliminar);
@@ -252,7 +251,6 @@
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.Text = "BUSCAR";
             this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 

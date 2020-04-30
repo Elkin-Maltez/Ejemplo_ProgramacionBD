@@ -20,12 +20,7 @@ namespace capaPresentacionWF
         {
             InitializeComponent();
         }
-
-        private void labelDescripcion_Click(object sender, EventArgs e)
-        {
-            //Metodo creado por equivocación
-        }
-
+        
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
            
@@ -73,7 +68,7 @@ namespace capaPresentacionWF
                     {
                         MessageBox.Show("Error al actualizar Recurso");
                     }
-                    buttonGuardar.Text = "Guardar";
+                    buttonGuardar.Text = "GUARDAR";
                 }
             }
             catch
@@ -81,17 +76,5 @@ namespace capaPresentacionWF
                 MessageBox.Show("ERROR");
             }
         }
-
-       
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Hola");
-        }
-
-        //private void buttonGuardar_Click(object sender, EventArgs e)
-        //{
-
-        //}
     }
 }
