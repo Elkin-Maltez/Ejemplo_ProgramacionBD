@@ -280,6 +280,7 @@
             this.Controls.Add(this.tabRecursos);
             this.Name = "fRecursos";
             this.Text = "Recursos";
+            this.Load += new System.EventHandler(this.fRecursos_Load);
             this.tabRecursos.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

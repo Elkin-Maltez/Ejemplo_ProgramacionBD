@@ -30,14 +30,6 @@
         {
             this.tabCuenta = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridViewCuenta = new System.Windows.Forms.DataGridView();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
-            this.labelBuscar = new System.Windows.Forms.Label();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.textBoxClave = new System.Windows.Forms.TextBox();
             this.textBoxNombreUsuario = new System.Windows.Forms.TextBox();
@@ -46,6 +38,14 @@
             this.labelNombreUsuario = new System.Windows.Forms.Label();
             this.labelIdCuenta = new System.Windows.Forms.Label();
             this.labelCuenta = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridViewCuenta = new System.Windows.Forms.DataGridView();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonBuscar = new System.Windows.Forms.Button();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.labelBuscar = new System.Windows.Forms.Label();
             this.tabCuenta.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -79,6 +79,88 @@
             this.tabPage1.Size = new System.Drawing.Size(793, 426);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
+            // 
+            // buttonGuardar
+            // 
+            this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.buttonGuardar.Location = new System.Drawing.Point(310, 315);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(206, 43);
+            this.buttonGuardar.TabIndex = 48;
+            this.buttonGuardar.Text = "GUARDAR";
+            this.buttonGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonGuardar.UseVisualStyleBackColor = true;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
+            // 
+            // textBoxClave
+            // 
+            this.textBoxClave.Location = new System.Drawing.Point(354, 222);
+            this.textBoxClave.Multiline = true;
+            this.textBoxClave.Name = "textBoxClave";
+            this.textBoxClave.Size = new System.Drawing.Size(233, 26);
+            this.textBoxClave.TabIndex = 47;
+            // 
+            // textBoxNombreUsuario
+            // 
+            this.textBoxNombreUsuario.Location = new System.Drawing.Point(354, 161);
+            this.textBoxNombreUsuario.Multiline = true;
+            this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
+            this.textBoxNombreUsuario.Size = new System.Drawing.Size(233, 26);
+            this.textBoxNombreUsuario.TabIndex = 46;
+            // 
+            // textBoxId
+            // 
+            this.textBoxId.Location = new System.Drawing.Point(354, 101);
+            this.textBoxId.Multiline = true;
+            this.textBoxId.Name = "textBoxId";
+            this.textBoxId.Size = new System.Drawing.Size(233, 26);
+            this.textBoxId.TabIndex = 45;
+            // 
+            // labelClave
+            // 
+            this.labelClave.AutoSize = true;
+            this.labelClave.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelClave.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelClave.Location = new System.Drawing.Point(159, 224);
+            this.labelClave.Name = "labelClave";
+            this.labelClave.Size = new System.Drawing.Size(60, 24);
+            this.labelClave.TabIndex = 44;
+            this.labelClave.Text = "Clave";
+            // 
+            // labelNombreUsuario
+            // 
+            this.labelNombreUsuario.AutoSize = true;
+            this.labelNombreUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNombreUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelNombreUsuario.Location = new System.Drawing.Point(159, 163);
+            this.labelNombreUsuario.Name = "labelNombreUsuario";
+            this.labelNombreUsuario.Size = new System.Drawing.Size(163, 24);
+            this.labelNombreUsuario.TabIndex = 43;
+            this.labelNombreUsuario.Text = "Nombre Usuario";
+            this.labelNombreUsuario.UseWaitCursor = true;
+            // 
+            // labelIdCuenta
+            // 
+            this.labelIdCuenta.AutoSize = true;
+            this.labelIdCuenta.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdCuenta.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdCuenta.Location = new System.Drawing.Point(159, 103);
+            this.labelIdCuenta.Name = "labelIdCuenta";
+            this.labelIdCuenta.Size = new System.Drawing.Size(36, 24);
+            this.labelIdCuenta.TabIndex = 42;
+            this.labelIdCuenta.Text = "ID";
+            // 
+            // labelCuenta
+            // 
+            this.labelCuenta.AutoSize = true;
+            this.labelCuenta.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCuenta.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelCuenta.Location = new System.Drawing.Point(217, 3);
+            this.labelCuenta.Name = "labelCuenta";
+            this.labelCuenta.Size = new System.Drawing.Size(299, 59);
+            this.labelCuenta.TabIndex = 41;
+            this.labelCuenta.Text = "Registrar Cuenta";
             // 
             // tabPage2
             // 
@@ -168,88 +250,6 @@
             this.labelBuscar.TabIndex = 21;
             this.labelBuscar.Text = "Buscar";
             // 
-            // buttonGuardar
-            // 
-            this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonGuardar.Location = new System.Drawing.Point(310, 315);
-            this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(206, 43);
-            this.buttonGuardar.TabIndex = 48;
-            this.buttonGuardar.Text = "GUARDAR";
-            this.buttonGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.buttonGuardar.UseVisualStyleBackColor = true;
-            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
-            // 
-            // textBoxClave
-            // 
-            this.textBoxClave.Location = new System.Drawing.Point(354, 222);
-            this.textBoxClave.Multiline = true;
-            this.textBoxClave.Name = "textBoxClave";
-            this.textBoxClave.Size = new System.Drawing.Size(233, 26);
-            this.textBoxClave.TabIndex = 47;
-            // 
-            // textBoxNombreUsuario
-            // 
-            this.textBoxNombreUsuario.Location = new System.Drawing.Point(354, 161);
-            this.textBoxNombreUsuario.Multiline = true;
-            this.textBoxNombreUsuario.Name = "textBoxNombreUsuario";
-            this.textBoxNombreUsuario.Size = new System.Drawing.Size(233, 26);
-            this.textBoxNombreUsuario.TabIndex = 46;
-            // 
-            // textBoxId
-            // 
-            this.textBoxId.Location = new System.Drawing.Point(354, 101);
-            this.textBoxId.Multiline = true;
-            this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(233, 26);
-            this.textBoxId.TabIndex = 45;
-            // 
-            // labelClave
-            // 
-            this.labelClave.AutoSize = true;
-            this.labelClave.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelClave.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelClave.Location = new System.Drawing.Point(159, 224);
-            this.labelClave.Name = "labelClave";
-            this.labelClave.Size = new System.Drawing.Size(60, 24);
-            this.labelClave.TabIndex = 44;
-            this.labelClave.Text = "Clave";
-            // 
-            // labelNombreUsuario
-            // 
-            this.labelNombreUsuario.AutoSize = true;
-            this.labelNombreUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNombreUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelNombreUsuario.Location = new System.Drawing.Point(159, 163);
-            this.labelNombreUsuario.Name = "labelNombreUsuario";
-            this.labelNombreUsuario.Size = new System.Drawing.Size(163, 24);
-            this.labelNombreUsuario.TabIndex = 43;
-            this.labelNombreUsuario.Text = "Nombre Usuario";
-            this.labelNombreUsuario.UseWaitCursor = true;
-            // 
-            // labelIdCuenta
-            // 
-            this.labelIdCuenta.AutoSize = true;
-            this.labelIdCuenta.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIdCuenta.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelIdCuenta.Location = new System.Drawing.Point(159, 103);
-            this.labelIdCuenta.Name = "labelIdCuenta";
-            this.labelIdCuenta.Size = new System.Drawing.Size(36, 24);
-            this.labelIdCuenta.TabIndex = 42;
-            this.labelIdCuenta.Text = "ID";
-            // 
-            // labelCuenta
-            // 
-            this.labelCuenta.AutoSize = true;
-            this.labelCuenta.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCuenta.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelCuenta.Location = new System.Drawing.Point(217, 3);
-            this.labelCuenta.Name = "labelCuenta";
-            this.labelCuenta.Size = new System.Drawing.Size(299, 59);
-            this.labelCuenta.TabIndex = 41;
-            this.labelCuenta.Text = "Registrar Cuenta";
-            // 
             // fCuenta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +258,7 @@
             this.Controls.Add(this.tabCuenta);
             this.Name = "fCuenta";
             this.Text = "Cuenta";
+            this.Load += new System.EventHandler(this.fCuenta_Load);
             this.tabCuenta.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

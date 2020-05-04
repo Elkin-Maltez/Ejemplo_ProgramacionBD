@@ -1,0 +1,17 @@
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\capaPresentacionWF2.exe.config
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\capaPresentacionWF2.exe
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\capaPresentacionWF2.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaEntidades.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaNegocio.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaDatos.dll
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaEntidades.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaNegocio.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\bin\Debug\CapaDatos.pdb
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.csprojAssemblyReference.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.fSolicitud.resources
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.Properties.Resources.resources
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.csproj.GenerateResource.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.csproj.CoreCompileInputs.cache
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.csproj.CopyComplete
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.exe
+C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF2\obj\Debug\capaPresentacionWF2.pdb

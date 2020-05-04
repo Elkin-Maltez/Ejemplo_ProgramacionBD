@@ -76,5 +76,10 @@ namespace capaPresentacionWF
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void fRecursos_Load(object sender, EventArgs e)
+        {
+            dataGridViewRecursos.DataSource = logicaNR.listarRecurso();
+        }
     }
 }

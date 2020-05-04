@@ -47,11 +47,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Comentario> listarComentarios()
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", "");
@@ -63,6 +66,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaComentario = new List<Comentario>();
+
                 while (dr.Read())
                 {
                     Comentario c = new Comentario();
@@ -116,6 +120,7 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public int EditarComentarios(Comentario co)
         {
             try
@@ -147,11 +152,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Comentario> BuscarComentarios(string dato)
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", dato);

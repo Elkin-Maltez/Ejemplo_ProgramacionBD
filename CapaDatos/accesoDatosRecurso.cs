@@ -48,11 +48,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Recurso> listarRecurso()
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Recurs", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@nombrer", "");
@@ -63,6 +66,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaRecurso = new List<Recurso>();
+
                 while (dr.Read())
                 {
                     Recurso r = new Recurso();
@@ -85,6 +89,7 @@ namespace CapaDatos
             }
             return listaRecurso;
         }
+
         public int eliminarRecurso(int idrecurs)
         {
             try
@@ -114,6 +119,7 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public int EditarRecurso(Recurso re)
         {
             try
@@ -144,11 +150,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Recurso> BuscarRecurso(string dato)
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Recurs", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@nombrer", dato);
@@ -159,6 +168,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaRecurso = new List<Recurso>();
+
                 while (dr.Read())
                 {
                     Recurso r = new Recurso();

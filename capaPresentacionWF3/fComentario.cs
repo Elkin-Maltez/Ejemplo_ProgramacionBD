@@ -79,5 +79,10 @@ namespace capaPresentacionWF3
                 MessageBox.Show("ERROR")
             }
         }
+
+        private void fComentario_Load(object sender, EventArgs e)
+        {
+            dataGridViewComentario.DataSource = logicaNC.listarComentario();
+        }
     }
 }

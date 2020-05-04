@@ -48,11 +48,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Cuenta> listarCuenta()
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Cuent", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idcuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", "");
@@ -62,6 +65,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaCuenta = new List<Cuenta>();
+
                 while (dr.Read())
                 {
                     Cuenta c = new Cuenta();
@@ -83,13 +87,14 @@ namespace CapaDatos
             }
             return listaCuenta;
         }
+
         public int eliminarCuenta(int idcuent)
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("Recurs", cnx);
+                cm = new SqlCommand("Cuent", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@idcuenta", idcuent);
                 cm.Parameters.AddWithValue("@nombreuser", "");
@@ -111,6 +116,7 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public int EditarCuenta(Cuenta cu)
         {
             try
@@ -145,6 +151,8 @@ namespace CapaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Cuent", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idcuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", dato);

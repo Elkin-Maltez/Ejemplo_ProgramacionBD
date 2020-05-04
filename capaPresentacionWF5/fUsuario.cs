@@ -83,5 +83,10 @@ namespace capaPresentacionWF5
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void fUsuario_Load(object sender, EventArgs e)
+        {
+            dataGridViewUsuario.DataSource = logicaNU.listarUsuario();
+        }
     }
 }

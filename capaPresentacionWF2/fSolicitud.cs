@@ -95,5 +95,10 @@ namespace capaPresentacionWF2
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void fSolicitud_Load(object sender, EventArgs e)
+        {
+            dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+        }
     }
 }

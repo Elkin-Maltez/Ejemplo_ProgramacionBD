@@ -51,11 +51,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Usuario> listarUsuario()
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Usuar", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idusuario", "");
                 cm.Parameters.AddWithValue("@cedula", "");
@@ -68,6 +71,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaUsuario = new List<Usuario>();
+
                 while (dr.Read())
                 {
                     Usuario u = new Usuario();
@@ -92,6 +96,7 @@ namespace CapaDatos
             }
             return listaUsuario;
         }
+
         public int eliminarUsuario(int idusuar)
         {
             try
@@ -123,6 +128,7 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public int EditarUsuario(Usuario us)
         {
             try
@@ -155,11 +161,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Usuario> BuscarUsuario(string dato)
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Usuar", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idusuario", "");
                 cm.Parameters.AddWithValue("@cedula", dato);
@@ -172,6 +181,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaUsuario = new List<Usuario>();
+
                 while (dr.Read())
                 {
                     Usuario u = new Usuario();

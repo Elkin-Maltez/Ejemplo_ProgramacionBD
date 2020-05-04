@@ -30,15 +30,6 @@
         {
             this.tabComentario = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.labelComentario = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridViewComentario = new System.Windows.Forms.DataGridView();
-            this.buttonEliminar = new System.Windows.Forms.Button();
-            this.buttonEditar = new System.Windows.Forms.Button();
-            this.buttonBuscar = new System.Windows.Forms.Button();
-            this.textBoxBuscar = new System.Windows.Forms.TextBox();
-            this.labelBuscar = new System.Windows.Forms.Label();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.textBoxMensaje = new System.Windows.Forms.TextBox();
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
@@ -50,6 +41,15 @@
             this.labelCorreo = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelIdComentario = new System.Windows.Forms.Label();
+            this.labelComentario = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dataGridViewComentario = new System.Windows.Forms.DataGridView();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonEditar = new System.Windows.Forms.Button();
+            this.buttonBuscar = new System.Windows.Forms.Button();
+            this.textBoxBuscar = new System.Windows.Forms.TextBox();
+            this.labelBuscar = new System.Windows.Forms.Label();
             this.tabComentario.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -87,105 +87,6 @@
             this.tabPage1.Size = new System.Drawing.Size(794, 424);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.dataGridViewComentario);
-            this.tabPage2.Controls.Add(this.buttonEliminar);
-            this.tabPage2.Controls.Add(this.buttonEditar);
-            this.tabPage2.Controls.Add(this.buttonBuscar);
-            this.tabPage2.Controls.Add(this.textBoxBuscar);
-            this.tabPage2.Controls.Add(this.labelBuscar);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(794, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Detalle";
-            // 
-            // labelComentario
-            // 
-            this.labelComentario.AutoSize = true;
-            this.labelComentario.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelComentario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelComentario.Location = new System.Drawing.Point(203, 3);
-            this.labelComentario.Name = "labelComentario";
-            this.labelComentario.Size = new System.Drawing.Size(357, 59);
-            this.labelComentario.TabIndex = 11;
-            this.labelComentario.Text = "Registrar Comentario";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label2.Location = new System.Drawing.Point(293, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(200, 59);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Información";
-            // 
-            // dataGridViewComentario
-            // 
-            this.dataGridViewComentario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewComentario.Location = new System.Drawing.Point(55, 212);
-            this.dataGridViewComentario.Name = "dataGridViewComentario";
-            this.dataGridViewComentario.Size = new System.Drawing.Size(670, 194);
-            this.dataGridViewComentario.TabIndex = 19;
-            // 
-            // buttonEliminar
-            // 
-            this.buttonEliminar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEliminar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonEliminar.Location = new System.Drawing.Point(557, 145);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(140, 31);
-            this.buttonEliminar.TabIndex = 18;
-            this.buttonEliminar.Text = "ELIMINAR";
-            this.buttonEliminar.UseVisualStyleBackColor = true;
-            // 
-            // buttonEditar
-            // 
-            this.buttonEditar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonEditar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonEditar.Location = new System.Drawing.Point(655, 106);
-            this.buttonEditar.Name = "buttonEditar";
-            this.buttonEditar.Size = new System.Drawing.Size(110, 28);
-            this.buttonEditar.TabIndex = 17;
-            this.buttonEditar.Text = "EDITAR";
-            this.buttonEditar.UseVisualStyleBackColor = true;
-            // 
-            // buttonBuscar
-            // 
-            this.buttonBuscar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonBuscar.Location = new System.Drawing.Point(493, 108);
-            this.buttonBuscar.Name = "buttonBuscar";
-            this.buttonBuscar.Size = new System.Drawing.Size(112, 27);
-            this.buttonBuscar.TabIndex = 16;
-            this.buttonBuscar.Text = "BUSCAR";
-            this.buttonBuscar.UseVisualStyleBackColor = true;
-            // 
-            // textBoxBuscar
-            // 
-            this.textBoxBuscar.Location = new System.Drawing.Point(128, 108);
-            this.textBoxBuscar.Multiline = true;
-            this.textBoxBuscar.Name = "textBoxBuscar";
-            this.textBoxBuscar.Size = new System.Drawing.Size(329, 26);
-            this.textBoxBuscar.TabIndex = 15;
-            // 
-            // labelBuscar
-            // 
-            this.labelBuscar.AutoSize = true;
-            this.labelBuscar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelBuscar.Location = new System.Drawing.Point(29, 111);
-            this.labelBuscar.Name = "labelBuscar";
-            this.labelBuscar.Size = new System.Drawing.Size(75, 24);
-            this.labelBuscar.TabIndex = 14;
-            this.labelBuscar.Text = "Buscar";
             // 
             // buttonGuardar
             // 
@@ -296,6 +197,105 @@
             this.labelIdComentario.TabIndex = 30;
             this.labelIdComentario.Text = "ID";
             // 
+            // labelComentario
+            // 
+            this.labelComentario.AutoSize = true;
+            this.labelComentario.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelComentario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelComentario.Location = new System.Drawing.Point(203, 3);
+            this.labelComentario.Name = "labelComentario";
+            this.labelComentario.Size = new System.Drawing.Size(357, 59);
+            this.labelComentario.TabIndex = 11;
+            this.labelComentario.Text = "Registrar Comentario";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage2.Controls.Add(this.label2);
+            this.tabPage2.Controls.Add(this.dataGridViewComentario);
+            this.tabPage2.Controls.Add(this.buttonEliminar);
+            this.tabPage2.Controls.Add(this.buttonEditar);
+            this.tabPage2.Controls.Add(this.buttonBuscar);
+            this.tabPage2.Controls.Add(this.textBoxBuscar);
+            this.tabPage2.Controls.Add(this.labelBuscar);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(794, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Detalle";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(293, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 59);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Información";
+            // 
+            // dataGridViewComentario
+            // 
+            this.dataGridViewComentario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewComentario.Location = new System.Drawing.Point(55, 212);
+            this.dataGridViewComentario.Name = "dataGridViewComentario";
+            this.dataGridViewComentario.Size = new System.Drawing.Size(670, 194);
+            this.dataGridViewComentario.TabIndex = 19;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEliminar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.buttonEliminar.Location = new System.Drawing.Point(557, 145);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(140, 31);
+            this.buttonEliminar.TabIndex = 18;
+            this.buttonEliminar.Text = "ELIMINAR";
+            this.buttonEliminar.UseVisualStyleBackColor = true;
+            // 
+            // buttonEditar
+            // 
+            this.buttonEditar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEditar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.buttonEditar.Location = new System.Drawing.Point(655, 106);
+            this.buttonEditar.Name = "buttonEditar";
+            this.buttonEditar.Size = new System.Drawing.Size(110, 28);
+            this.buttonEditar.TabIndex = 17;
+            this.buttonEditar.Text = "EDITAR";
+            this.buttonEditar.UseVisualStyleBackColor = true;
+            // 
+            // buttonBuscar
+            // 
+            this.buttonBuscar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.buttonBuscar.Location = new System.Drawing.Point(493, 108);
+            this.buttonBuscar.Name = "buttonBuscar";
+            this.buttonBuscar.Size = new System.Drawing.Size(112, 27);
+            this.buttonBuscar.TabIndex = 16;
+            this.buttonBuscar.Text = "BUSCAR";
+            this.buttonBuscar.UseVisualStyleBackColor = true;
+            // 
+            // textBoxBuscar
+            // 
+            this.textBoxBuscar.Location = new System.Drawing.Point(128, 108);
+            this.textBoxBuscar.Multiline = true;
+            this.textBoxBuscar.Name = "textBoxBuscar";
+            this.textBoxBuscar.Size = new System.Drawing.Size(329, 26);
+            this.textBoxBuscar.TabIndex = 15;
+            // 
+            // labelBuscar
+            // 
+            this.labelBuscar.AutoSize = true;
+            this.labelBuscar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuscar.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelBuscar.Location = new System.Drawing.Point(29, 111);
+            this.labelBuscar.Name = "labelBuscar";
+            this.labelBuscar.Size = new System.Drawing.Size(75, 24);
+            this.labelBuscar.TabIndex = 14;
+            this.labelBuscar.Text = "Buscar";
+            // 
             // fComentario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -304,6 +304,7 @@
             this.Controls.Add(this.tabComentario);
             this.Name = "fComentario";
             this.Text = "Comentario";
+            this.Load += new System.EventHandler(this.fComentario_Load);
             this.tabComentario.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

@@ -397,6 +397,7 @@
             this.Controls.Add(this.tabSolicitud);
             this.Name = "fSolicitud";
             this.Text = "Solicitud";
+            this.Load += new System.EventHandler(this.fSolicitud_Load);
             this.tabSolicitud.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

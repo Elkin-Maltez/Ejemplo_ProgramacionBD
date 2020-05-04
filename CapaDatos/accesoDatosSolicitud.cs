@@ -52,11 +52,14 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public List<Solicitud> listarSolicitud()
         {
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Solicit", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", "");
@@ -72,6 +75,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaSolicitud = new List<Solicitud>();
+
                 while (dr.Read())
                 {
                     Solicitud s = new Solicitud();
@@ -107,7 +111,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Solicit", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@idsolicitud", idsolicit);
                 cm.Parameters.AddWithValue("@aula", "");
@@ -135,6 +139,7 @@ namespace CapaDatos
             }
             return indicador;
         }
+
         public int EditarSolicitud(Solicitud so)
         {
             try
@@ -175,6 +180,8 @@ namespace CapaDatos
             try
             {
                 SqlConnection cnx = cn.conectar();
+
+                cm = new SqlCommand("Solicit", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idsolicitud", "");
                 cm.Parameters.AddWithValue("@aula", dato);
@@ -190,6 +197,7 @@ namespace CapaDatos
                 cnx.Open();
                 dr = cm.ExecuteReader();
                 listaSolicitud = new List<Solicitud>();
+
                 while (dr.Read())
                 {
                     Solicitud s = new Solicitud();

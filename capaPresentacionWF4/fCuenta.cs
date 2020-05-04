@@ -71,5 +71,10 @@ namespace capaPresentacionWF4
                 MessageBox.Show("ERROR");
             }
         }
+
+        private void fCuenta_Load(object sender, EventArgs e)
+        {
+            dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
+        }
     }
 }
