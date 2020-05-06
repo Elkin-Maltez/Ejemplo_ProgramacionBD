@@ -92,7 +92,7 @@
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonGuardar.Location = new System.Drawing.Point(266, 341);
+            this.buttonGuardar.Location = new System.Drawing.Point(304, 343);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(206, 43);
             this.buttonGuardar.TabIndex = 40;
@@ -103,7 +103,7 @@
             // 
             // textBoxMensaje
             // 
-            this.textBoxMensaje.Location = new System.Drawing.Point(313, 268);
+            this.textBoxMensaje.Location = new System.Drawing.Point(351, 270);
             this.textBoxMensaje.Multiline = true;
             this.textBoxMensaje.Name = "textBoxMensaje";
             this.textBoxMensaje.Size = new System.Drawing.Size(233, 26);
@@ -111,7 +111,7 @@
             // 
             // textBoxTelefono
             // 
-            this.textBoxTelefono.Location = new System.Drawing.Point(313, 226);
+            this.textBoxTelefono.Location = new System.Drawing.Point(351, 228);
             this.textBoxTelefono.Multiline = true;
             this.textBoxTelefono.Name = "textBoxTelefono";
             this.textBoxTelefono.Size = new System.Drawing.Size(233, 26);
@@ -119,7 +119,7 @@
             // 
             // textBoxCorreo
             // 
-            this.textBoxCorreo.Location = new System.Drawing.Point(313, 183);
+            this.textBoxCorreo.Location = new System.Drawing.Point(351, 185);
             this.textBoxCorreo.Multiline = true;
             this.textBoxCorreo.Name = "textBoxCorreo";
             this.textBoxCorreo.Size = new System.Drawing.Size(233, 26);
@@ -127,7 +127,7 @@
             // 
             // textBoxNombre
             // 
-            this.textBoxNombre.Location = new System.Drawing.Point(313, 141);
+            this.textBoxNombre.Location = new System.Drawing.Point(351, 143);
             this.textBoxNombre.Multiline = true;
             this.textBoxNombre.Name = "textBoxNombre";
             this.textBoxNombre.Size = new System.Drawing.Size(233, 26);
@@ -135,7 +135,7 @@
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(313, 99);
+            this.textBoxId.Location = new System.Drawing.Point(351, 101);
             this.textBoxId.Multiline = true;
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(233, 26);
@@ -146,7 +146,7 @@
             this.labelMensaje.AutoSize = true;
             this.labelMensaje.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMensaje.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelMensaje.Location = new System.Drawing.Point(150, 268);
+            this.labelMensaje.Location = new System.Drawing.Point(188, 270);
             this.labelMensaje.Name = "labelMensaje";
             this.labelMensaje.Size = new System.Drawing.Size(86, 24);
             this.labelMensaje.TabIndex = 34;
@@ -157,7 +157,7 @@
             this.labelTelefono.AutoSize = true;
             this.labelTelefono.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTelefono.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelTelefono.Location = new System.Drawing.Point(150, 226);
+            this.labelTelefono.Location = new System.Drawing.Point(188, 228);
             this.labelTelefono.Name = "labelTelefono";
             this.labelTelefono.Size = new System.Drawing.Size(90, 24);
             this.labelTelefono.TabIndex = 33;
@@ -168,7 +168,7 @@
             this.labelCorreo.AutoSize = true;
             this.labelCorreo.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCorreo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelCorreo.Location = new System.Drawing.Point(150, 183);
+            this.labelCorreo.Location = new System.Drawing.Point(188, 185);
             this.labelCorreo.Name = "labelCorreo";
             this.labelCorreo.Size = new System.Drawing.Size(69, 24);
             this.labelCorreo.TabIndex = 32;
@@ -179,7 +179,7 @@
             this.labelNombre.AutoSize = true;
             this.labelNombre.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombre.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelNombre.Location = new System.Drawing.Point(150, 141);
+            this.labelNombre.Location = new System.Drawing.Point(188, 143);
             this.labelNombre.Name = "labelNombre";
             this.labelNombre.Size = new System.Drawing.Size(82, 24);
             this.labelNombre.TabIndex = 31;
@@ -191,7 +191,7 @@
             this.labelIdComentario.AutoSize = true;
             this.labelIdComentario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelIdComentario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelIdComentario.Location = new System.Drawing.Point(150, 99);
+            this.labelIdComentario.Location = new System.Drawing.Point(188, 101);
             this.labelIdComentario.Name = "labelIdComentario";
             this.labelIdComentario.Size = new System.Drawing.Size(36, 24);
             this.labelIdComentario.TabIndex = 30;
@@ -202,7 +202,7 @@
             this.labelComentario.AutoSize = true;
             this.labelComentario.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelComentario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelComentario.Location = new System.Drawing.Point(203, 3);
+            this.labelComentario.Location = new System.Drawing.Point(218, 3);
             this.labelComentario.Name = "labelComentario";
             this.labelComentario.Size = new System.Drawing.Size(357, 59);
             this.labelComentario.TabIndex = 11;

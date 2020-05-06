@@ -22,7 +22,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 1);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", co.nombres);
@@ -54,7 +54,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 3);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", "");
@@ -96,7 +96,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
                 cm.Parameters.AddWithValue("@idcomentario", idcoment);
                 cm.Parameters.AddWithValue("@nombres", "");
@@ -127,7 +127,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
                 cm.Parameters.AddWithValue("@idcomentario", co.idcomentario);
                 cm.Parameters.AddWithValue("@nombres", "");
@@ -159,7 +159,7 @@ namespace CapaDatos
             {
                 SqlConnection cnx = cn.conectar();
 
-                cm = new SqlCommand("comentar", cnx);
+                cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 5);
                 cm.Parameters.AddWithValue("@idcomentario", "");
                 cm.Parameters.AddWithValue("@nombres", dato);

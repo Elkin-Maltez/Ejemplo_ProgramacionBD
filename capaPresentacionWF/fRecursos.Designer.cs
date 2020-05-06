@@ -88,7 +88,7 @@
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonGuardar.Location = new System.Drawing.Point(256, 320);
+            this.buttonGuardar.Location = new System.Drawing.Point(308, 320);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(153, 39);
             this.buttonGuardar.TabIndex = 9;
@@ -98,7 +98,7 @@
             // 
             // textBoxDescripcion
             // 
-            this.textBoxDescripcion.Location = new System.Drawing.Point(181, 217);
+            this.textBoxDescripcion.Location = new System.Drawing.Point(233, 217);
             this.textBoxDescripcion.Multiline = true;
             this.textBoxDescripcion.Name = "textBoxDescripcion";
             this.textBoxDescripcion.Size = new System.Drawing.Size(342, 76);
@@ -106,7 +106,7 @@
             // 
             // textBoxCodigo
             // 
-            this.textBoxCodigo.Location = new System.Drawing.Point(181, 173);
+            this.textBoxCodigo.Location = new System.Drawing.Point(233, 173);
             this.textBoxCodigo.Multiline = true;
             this.textBoxCodigo.Name = "textBoxCodigo";
             this.textBoxCodigo.Size = new System.Drawing.Size(342, 23);
@@ -114,7 +114,7 @@
             // 
             // textBoxNombrer
             // 
-            this.textBoxNombrer.Location = new System.Drawing.Point(181, 134);
+            this.textBoxNombrer.Location = new System.Drawing.Point(233, 134);
             this.textBoxNombrer.Multiline = true;
             this.textBoxNombrer.Name = "textBoxNombrer";
             this.textBoxNombrer.Size = new System.Drawing.Size(342, 23);
@@ -122,7 +122,7 @@
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(181, 93);
+            this.textBoxId.Location = new System.Drawing.Point(233, 93);
             this.textBoxId.Multiline = true;
             this.textBoxId.Name = "textBoxId";
             this.textBoxId.Size = new System.Drawing.Size(342, 23);
@@ -133,7 +133,7 @@
             this.labelDescripcion.AutoSize = true;
             this.labelDescripcion.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescripcion.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelDescripcion.Location = new System.Drawing.Point(56, 232);
+            this.labelDescripcion.Location = new System.Drawing.Point(108, 232);
             this.labelDescripcion.Name = "labelDescripcion";
             this.labelDescripcion.Size = new System.Drawing.Size(119, 24);
             this.labelDescripcion.TabIndex = 4;
@@ -144,7 +144,7 @@
             this.labelCodigo.AutoSize = true;
             this.labelCodigo.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCodigo.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelCodigo.Location = new System.Drawing.Point(93, 173);
+            this.labelCodigo.Location = new System.Drawing.Point(145, 173);
             this.labelCodigo.Name = "labelCodigo";
             this.labelCodigo.Size = new System.Drawing.Size(71, 24);
             this.labelCodigo.TabIndex = 3;
@@ -155,7 +155,7 @@
             this.labelNombrer.AutoSize = true;
             this.labelNombrer.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNombrer.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelNombrer.Location = new System.Drawing.Point(93, 129);
+            this.labelNombrer.Location = new System.Drawing.Point(145, 129);
             this.labelNombrer.Name = "labelNombrer";
             this.labelNombrer.Size = new System.Drawing.Size(82, 24);
             this.labelNombrer.TabIndex = 2;
@@ -166,7 +166,7 @@
             this.labelId.AutoSize = true;
             this.labelId.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelId.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelId.Location = new System.Drawing.Point(93, 88);
+            this.labelId.Location = new System.Drawing.Point(145, 88);
             this.labelId.Name = "labelId";
             this.labelId.Size = new System.Drawing.Size(36, 24);
             this.labelId.TabIndex = 1;
@@ -177,7 +177,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("AR DECODE", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label1.Location = new System.Drawing.Point(218, 19);
+            this.label1.Location = new System.Drawing.Point(246, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(304, 59);
             this.label1.TabIndex = 0;

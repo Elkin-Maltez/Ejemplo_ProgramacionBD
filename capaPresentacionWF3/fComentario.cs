@@ -76,7 +76,7 @@ namespace capaPresentacionWF3
             }
             catch 
             {
-                MessageBox.Show("ERROR")
+                MessageBox.Show("ERROR");
             }
         }
 
