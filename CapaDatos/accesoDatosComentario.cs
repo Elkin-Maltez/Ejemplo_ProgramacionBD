@@ -71,7 +71,7 @@ namespace CapaDatos
                 {
                     Comentario c = new Comentario();
                     c.idcomentario = Convert.ToInt32(dr["idcomentario"].ToString());
-                    c.nombres = dr["nombre"].ToString();
+                    c.nombres = dr["nombres"].ToString();
                     c.correo = dr["correo"].ToString();
                     c.telefono = dr["telefono"].ToString();
                     c.mensaje = dr["mensaje"].ToString();
