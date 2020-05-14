@@ -213,6 +213,7 @@
             // 
             // dataGridViewRecursos
             // 
+            this.dataGridViewRecursos.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.dataGridViewRecursos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRecursos.Location = new System.Drawing.Point(36, 165);
             this.dataGridViewRecursos.Name = "dataGridViewRecursos";
@@ -240,6 +241,7 @@
             this.buttonEditar.TabIndex = 3;
             this.buttonEditar.Text = "EDITAR";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonBuscar
             // 

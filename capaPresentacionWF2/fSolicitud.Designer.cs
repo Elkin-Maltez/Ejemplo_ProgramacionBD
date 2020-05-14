@@ -331,6 +331,7 @@
             // 
             // dataGridViewSolicitud
             // 
+            this.dataGridViewSolicitud.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.dataGridViewSolicitud.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewSolicitud.Location = new System.Drawing.Point(56, 211);
             this.dataGridViewSolicitud.Name = "dataGridViewSolicitud";

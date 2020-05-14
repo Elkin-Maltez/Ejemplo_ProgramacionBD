@@ -86,6 +86,8 @@ namespace capaPresentacionWF5
 
         private void fUsuario_Load(object sender, EventArgs e)
         {
+            //textBoxId.Visible = false;
+            //labelIdUsuario.Visible = false;
             dataGridViewUsuario.DataSource = logicaNU.listarUsuario();
         }
     }

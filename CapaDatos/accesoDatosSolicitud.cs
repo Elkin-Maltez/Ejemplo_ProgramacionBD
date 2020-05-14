@@ -88,8 +88,6 @@ namespace CapaDatos
                     s.horafinal = Convert.ToDateTime(dr["horafinal"].ToString());
                     s.carrera = dr["carrera"].ToString();
                     s.asignatura = dr["asignatura"].ToString();
-                    s.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
-                    s.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
                     listaSolicitud.Add(s);
                 }
 
@@ -210,8 +208,6 @@ namespace CapaDatos
                     s.horafinal = Convert.ToDateTime(dr["horafinal"].ToString());
                     s.carrera = dr["carrera"].ToString();
                     s.asignatura = dr["asignatura"].ToString();
-                    s.idrecursos = Convert.ToInt32(dr["idrecursos"].ToString());
-                    s.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
                     listaSolicitud.Add(s);
                 }
 

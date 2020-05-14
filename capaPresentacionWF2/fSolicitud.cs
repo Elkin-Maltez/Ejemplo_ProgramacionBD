@@ -98,6 +98,8 @@ namespace capaPresentacionWF2
 
         private void fSolicitud_Load(object sender, EventArgs e)
         {
+            //textBoxId.Visible = false;
+            //labelIdSolicitud.Visible = false;
             dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
         }
     }

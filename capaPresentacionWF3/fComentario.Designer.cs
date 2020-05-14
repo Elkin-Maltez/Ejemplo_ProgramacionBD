@@ -238,6 +238,7 @@
             // 
             // dataGridViewComentario
             // 
+            this.dataGridViewComentario.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.dataGridViewComentario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewComentario.Location = new System.Drawing.Point(55, 212);
             this.dataGridViewComentario.Name = "dataGridViewComentario";

@@ -82,6 +82,8 @@ namespace capaPresentacionWF3
 
         private void fComentario_Load(object sender, EventArgs e)
         {
+            //textBoxId.Visible = false;
+            //labelIdCuenta.Visible = false;
             dataGridViewComentario.DataSource = logicaNC.listarComentario();
         }
     }

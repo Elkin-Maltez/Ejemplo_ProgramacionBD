@@ -42,7 +42,7 @@
             this.labelApellido = new System.Windows.Forms.Label();
             this.labelNombre = new System.Windows.Forms.Label();
             this.labelCedula = new System.Windows.Forms.Label();
-            this.labelIdSolicitud = new System.Windows.Forms.Label();
+            this.labelIdUsuario = new System.Windows.Forms.Label();
             this.labelUsuario = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label2 = new System.Windows.Forms.Label();
@@ -83,7 +83,7 @@
             this.tabPage1.Controls.Add(this.labelApellido);
             this.tabPage1.Controls.Add(this.labelNombre);
             this.tabPage1.Controls.Add(this.labelCedula);
-            this.tabPage1.Controls.Add(this.labelIdSolicitud);
+            this.tabPage1.Controls.Add(this.labelIdUsuario);
             this.tabPage1.Controls.Add(this.labelUsuario);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
@@ -209,16 +209,16 @@
             this.labelCedula.Text = "Cedula";
             this.labelCedula.UseWaitCursor = true;
             // 
-            // labelIdSolicitud
+            // labelIdUsuario
             // 
-            this.labelIdSolicitud.AutoSize = true;
-            this.labelIdSolicitud.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIdSolicitud.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelIdSolicitud.Location = new System.Drawing.Point(22, 115);
-            this.labelIdSolicitud.Name = "labelIdSolicitud";
-            this.labelIdSolicitud.Size = new System.Drawing.Size(36, 24);
-            this.labelIdSolicitud.TabIndex = 31;
-            this.labelIdSolicitud.Text = "ID";
+            this.labelIdUsuario.AutoSize = true;
+            this.labelIdUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdUsuario.Location = new System.Drawing.Point(22, 115);
+            this.labelIdUsuario.Name = "labelIdUsuario";
+            this.labelIdUsuario.Size = new System.Drawing.Size(36, 24);
+            this.labelIdUsuario.TabIndex = 31;
+            this.labelIdUsuario.Text = "ID";
             // 
             // labelUsuario
             // 
@@ -261,6 +261,7 @@
             // 
             // dataGridViewUsuario
             // 
+            this.dataGridViewUsuario.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.dataGridViewUsuario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUsuario.Location = new System.Drawing.Point(53, 225);
             this.dataGridViewUsuario.Name = "dataGridViewUsuario";
@@ -362,7 +363,7 @@
         private System.Windows.Forms.Label labelApellido;
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Label labelCedula;
-        private System.Windows.Forms.Label labelIdSolicitud;
+        private System.Windows.Forms.Label labelIdUsuario;
         private System.Windows.Forms.Label labelUsuario;
     }
 }

@@ -74,6 +74,8 @@ namespace capaPresentacionWF4
 
         private void fCuenta_Load(object sender, EventArgs e)
         {
+            //textBoxId.Visible = false;
+            //labelIdCuenta.Visible = false;
             dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
         }
     }

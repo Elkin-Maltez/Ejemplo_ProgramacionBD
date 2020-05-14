@@ -192,6 +192,7 @@
             // 
             // dataGridViewCuenta
             // 
+            this.dataGridViewCuenta.BackgroundColor = System.Drawing.SystemColors.HotTrack;
             this.dataGridViewCuenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewCuenta.Location = new System.Drawing.Point(54, 221);
             this.dataGridViewCuenta.Name = "dataGridViewCuenta";

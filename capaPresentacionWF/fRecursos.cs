@@ -79,7 +79,15 @@ namespace capaPresentacionWF
 
         private void fRecursos_Load(object sender, EventArgs e)
         {
+            textBoxId.Visible = false;
+            labelId.Visible = false;
             dataGridViewRecursos.DataSource = logicaNR.listarRecurso();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = true;
         }
     }
 }

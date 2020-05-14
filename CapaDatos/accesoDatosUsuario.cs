@@ -78,9 +78,9 @@ namespace CapaDatos
                     u.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
                     u.cedula = dr["cedula"].ToString();
                     u.nombres = dr["nombres"].ToString();
-                    u.nombres = dr["apellidos"].ToString();
-                    u.nombres = dr["email"].ToString();
-                    u.nombres = dr["telefono"].ToString();
+                    u.apellidos = dr["apellidos"].ToString();
+                    u.email = dr["email"].ToString();
+                    u.telefono = dr["telefono"].ToString();
                     listaUsuario.Add(u);
                 }
 
@@ -105,7 +105,7 @@ namespace CapaDatos
 
                 cm = new SqlCommand("Usuar", cnx);
                 cm.Parameters.AddWithValue("@b", 2);
-                cm.Parameters.AddWithValue("@idcuenta", idusuar);
+                cm.Parameters.AddWithValue("@idusuario", idusuar);
                 cm.Parameters.AddWithValue("@cedula", "");
                 cm.Parameters.AddWithValue("@nombres", "");
                 cm.Parameters.AddWithValue("@apellidos", "");
@@ -186,6 +186,7 @@ namespace CapaDatos
                 {
                     Usuario u = new Usuario();
                     u.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
+                    u.cedula = dr["cedula"].ToString();
                     u.nombres = dr["nombres"].ToString();
                     u.apellidos = dr["apellidos"].ToString();
                     u.email = dr["email"].ToString();
