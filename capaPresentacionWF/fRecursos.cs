@@ -87,7 +87,41 @@ namespace capaPresentacionWF
         private void buttonEditar_Click(object sender, EventArgs e)
         {
             textBoxId.Visible = true;
-            textBoxId.Enabled = true;
+            textBoxId.Enabled = false;
+            labelId.Visible = true;
+
+            textBoxId.Text = dataGridViewRecursos.CurrentRow.Cells["idrecursos"].Value.ToString();
+            textBoxNombrer.Text = dataGridViewRecursos.CurrentRow.Cells["nombrer"].Value.ToString();
+            textBoxCodigo.Text = dataGridViewRecursos.CurrentRow.Cells["codigo"].Value.ToString();
+            textBoxDescripcion.Text = dataGridViewRecursos.CurrentRow.Cells["descripcion"].Value.ToString();
+
+            tabRecursos.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
+
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int codigoR = Convert.ToInt32(dataGridViewRecursos.CurrentRow.Cells["idrecurso"].Value.ToString());
+
+            try
+            {
+                if (logicaNR.eliminarRecurso(codigoR)>0)
+                {
+                    MessageBox.Show("Eliminado con éxito");
+                    dataGridViewRecursos.DataSource = logicaNR.listarRecurso();
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("ERROR al eliminar recurso");
+            }
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Recurso> listaRecursos = logicaNR.BuscarRecurso(textBoxBuscar.Text);
+            dataGridViewRecursos.DataSource = listaRecursos;
         }
     }
 }

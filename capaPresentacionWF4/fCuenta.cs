@@ -74,9 +74,47 @@ namespace capaPresentacionWF4
 
         private void fCuenta_Load(object sender, EventArgs e)
         {
-            //textBoxId.Visible = false;
-            //labelIdCuenta.Visible = false;
+            textBoxId.Visible = false;
+            labelIdCuenta.Visible = false;
             dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = false;
+            labelIdCuenta.Visible = true;
+
+            textBoxId.Text = dataGridViewCuenta.CurrentRow.Cells["idcuenta"].Value.ToString();
+            textBoxNombreUsuario.Text = dataGridViewCuenta.CurrentRow.Cells["nombreuser"].Value.ToString();
+            textBoxClave.Text = dataGridViewCuenta.CurrentRow.Cells["clave"].Value.ToString();
+
+            tabCuenta.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int codigoCt = Convert.ToInt32(dataGridViewCuenta.CurrentRow.Cells["idcuenta"].Value.ToString());
+
+            try
+            {
+                if (logicaNCt.eliminarCuentas(codigoCt) > 0)
+                {
+                    MessageBox.Show("Eliminado con éxito");
+                    dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ERROR al eliminar cuenta");
+            }
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Cuenta> listaCuenta = logicaNCt.BuscarCuentas(textBoxBuscar.Text);
+            dataGridViewCuenta.DataSource = listaCuenta;
         }
     }
 }

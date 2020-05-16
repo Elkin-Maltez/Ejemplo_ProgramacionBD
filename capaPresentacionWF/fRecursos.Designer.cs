@@ -230,6 +230,7 @@
             this.buttonEliminar.TabIndex = 4;
             this.buttonEliminar.Text = "ELIMINAR";
             this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // buttonEditar
             // 
@@ -253,6 +254,7 @@
             this.buttonBuscar.TabIndex = 2;
             this.buttonBuscar.Text = "BUSCAR";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 

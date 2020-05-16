@@ -348,6 +348,7 @@
             this.buttonEliminar.TabIndex = 11;
             this.buttonEliminar.Text = "ELIMINAR";
             this.buttonEliminar.UseVisualStyleBackColor = true;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // buttonEditar
             // 
@@ -359,6 +360,7 @@
             this.buttonEditar.TabIndex = 10;
             this.buttonEditar.Text = "EDITAR";
             this.buttonEditar.UseVisualStyleBackColor = true;
+            this.buttonEditar.Click += new System.EventHandler(this.buttonEditar_Click);
             // 
             // buttonBuscar
             // 
@@ -370,6 +372,7 @@
             this.buttonBuscar.TabIndex = 9;
             this.buttonBuscar.Text = "BUSCAR";
             this.buttonBuscar.UseVisualStyleBackColor = true;
+            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 

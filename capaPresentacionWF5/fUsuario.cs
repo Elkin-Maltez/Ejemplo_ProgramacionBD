@@ -86,9 +86,50 @@ namespace capaPresentacionWF5
 
         private void fUsuario_Load(object sender, EventArgs e)
         {
-            //textBoxId.Visible = false;
-            //labelIdUsuario.Visible = false;
+            textBoxId.Visible = false;
+            labelIdUsuario.Visible = false;
             dataGridViewUsuario.DataSource = logicaNU.listarUsuario();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = false;
+            labelIdUsuario.Visible = true;
+
+            textBoxId.Text = dataGridViewUsuario.CurrentRow.Cells["idusuario"].Value.ToString();
+            textBoxCedula.Text = dataGridViewUsuario.CurrentRow.Cells["cedula"].Value.ToString();
+            textBoxNombre.Text = dataGridViewUsuario.CurrentRow.Cells["nombres"].Value.ToString();
+            textBoxApellido.Text = dataGridViewUsuario.CurrentRow.Cells["apellidos"].Value.ToString();
+            textBoxEmail.Text = dataGridViewUsuario.CurrentRow.Cells["email"].Value.ToString();
+            textBoxTelefono.Text = dataGridViewUsuario.CurrentRow.Cells["telefono"].Value.ToString();
+
+            tabUsuario.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int codigoU = Convert.ToInt32(dataGridViewUsuario.CurrentRow.Cells["idusuario"].Value.ToString());
+
+            try
+            {
+                if (logicaNU.eliminarUsuario(codigoU) > 0)
+                {
+                    MessageBox.Show("Eliminado con éxito");
+                    dataGridViewUsuario.DataSource = logicaNU.listarUsuario();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ERROR al eliminar usuario");
+            }
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Usuario> listaUsuario = logicaNU.BuscarUsuario(textBoxBuscar.Text);
+            dataGridViewUsuario.DataSource = listaUsuario;
         }
     }
 }

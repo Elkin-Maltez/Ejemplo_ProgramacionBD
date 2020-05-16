@@ -82,9 +82,49 @@ namespace capaPresentacionWF3
 
         private void fComentario_Load(object sender, EventArgs e)
         {
-            //textBoxId.Visible = false;
-            //labelIdCuenta.Visible = false;
+            textBoxId.Visible = false;
+            labelIdComentario.Visible = false;
             dataGridViewComentario.DataSource = logicaNC.listarComentario();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = false;
+            labelIdComentario.Visible = true;
+
+            textBoxId.Text = dataGridViewComentario.CurrentRow.Cells["idcomentario"].Value.ToString();
+            textBoxNombre.Text = dataGridViewComentario.CurrentRow.Cells["nombres"].Value.ToString();
+            textBoxCorreo.Text = dataGridViewComentario.CurrentRow.Cells["correo"].Value.ToString();
+            textBoxTelefono.Text = dataGridViewComentario.CurrentRow.Cells["telefono"].Value.ToString();
+            textBoxMensaje.Text = dataGridViewComentario.CurrentRow.Cells["mensaje"].Value.ToString();
+
+            tabComentario.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int codigoC = Convert.ToInt32(dataGridViewComentario.CurrentRow.Cells["idcomentario"].Value.ToString());
+
+            try
+            {
+                if (logicaNC.eliminarComentarios(codigoC) > 0)
+                {
+                    MessageBox.Show("Eliminado con éxito");
+                    dataGridViewComentario.DataSource = logicaNC.listarComentario();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ERROR al eliminar comentario");
+            }
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Comentario> listaComentario = logicaNC.BuscarComentarios(textBoxBuscar.Text);
+            dataGridViewComentario.DataSource = listaComentario;
         }
     }
 }

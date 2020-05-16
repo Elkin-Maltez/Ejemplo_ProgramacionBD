@@ -98,9 +98,53 @@ namespace capaPresentacionWF2
 
         private void fSolicitud_Load(object sender, EventArgs e)
         {
-            //textBoxId.Visible = false;
-            //labelIdSolicitud.Visible = false;
+            textBoxId.Visible = false;
+            labelIdSolicitud.Visible = false;
             dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+        }
+
+        private void buttonEditar_Click(object sender, EventArgs e)
+        {
+            textBoxId.Visible = true;
+            textBoxId.Enabled = false;
+            labelIdSolicitud.Visible = true;
+
+            textBoxId.Text = dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString();
+            textBoxAula.Text = dataGridViewSolicitud.CurrentRow.Cells["aula"].Value.ToString();
+            textBoxNivel.Text = dataGridViewSolicitud.CurrentRow.Cells["nivel"].Value.ToString();
+            textBoxFechaSolicitud.Text = dataGridViewSolicitud.CurrentRow.Cells["fechasolicitud"].Value.ToString();
+            textBoxFechaUso.Text = dataGridViewSolicitud.CurrentRow.Cells["fechauso"].Value.ToString();
+            textBoxHoraInicio.Text = dataGridViewSolicitud.CurrentRow.Cells["horainicio"].Value.ToString();
+            textBoxHoraFinal.Text = dataGridViewSolicitud.CurrentRow.Cells["horafinal"].Value.ToString();
+            textBoxCarrera.Text = dataGridViewSolicitud.CurrentRow.Cells["carrera"].Value.ToString();
+            textBoxAsignatura.Text = dataGridViewSolicitud.CurrentRow.Cells["asignatura"].Value.ToString();
+
+            tabSolicitud.SelectedTab = tabPage1;
+            buttonGuardar.Text = "Actualizar";
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int codigoS = Convert.ToInt32(dataGridViewSolicitud.CurrentRow.Cells["idsolicitud"].Value.ToString());
+
+            try
+            {
+                if (logicaNS.eliminarSolicitud(codigoS) > 0)
+                {
+                    MessageBox.Show("Eliminado con éxito");
+                    dataGridViewSolicitud.DataSource = logicaNS.listarSolicitud();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("ERROR al eliminar solicitud");
+            }
+        }
+
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Solicitud> listaSolicitud = logicaNS.BuscarSolicitud(textBoxBuscar.Text);
+            dataGridViewSolicitud.DataSource = listaSolicitud;
         }
     }
 }
