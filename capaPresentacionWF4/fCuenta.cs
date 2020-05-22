@@ -90,7 +90,7 @@ namespace capaPresentacionWF4
             textBoxClave.Text = dataGridViewCuenta.CurrentRow.Cells["clave"].Value.ToString();
 
             tabCuenta.SelectedTab = tabPage1;
-            buttonGuardar.Text = "Actualizar";
+            buttonGuardar.Text = "ACTUALIZAR";
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)

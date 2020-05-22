@@ -110,7 +110,7 @@
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
             this.buttonGuardar.Location = new System.Drawing.Point(317, 331);
             this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(206, 43);
+            this.buttonGuardar.Size = new System.Drawing.Size(231, 43);
             this.buttonGuardar.TabIndex = 29;
             this.buttonGuardar.Text = "GUARDAR";
             this.buttonGuardar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

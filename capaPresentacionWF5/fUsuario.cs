@@ -105,7 +105,7 @@ namespace capaPresentacionWF5
             textBoxTelefono.Text = dataGridViewUsuario.CurrentRow.Cells["telefono"].Value.ToString();
 
             tabUsuario.SelectedTab = tabPage1;
-            buttonGuardar.Text = "Actualizar";
+            buttonGuardar.Text = "ACTUALIZAR";
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)

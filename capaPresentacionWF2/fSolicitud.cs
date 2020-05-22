@@ -120,7 +120,7 @@ namespace capaPresentacionWF2
             textBoxAsignatura.Text = dataGridViewSolicitud.CurrentRow.Cells["asignatura"].Value.ToString();
 
             tabSolicitud.SelectedTab = tabPage1;
-            buttonGuardar.Text = "Actualizar";
+            buttonGuardar.Text = "ACTUALIZAR";
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)

@@ -96,13 +96,13 @@ namespace capaPresentacionWF
             textBoxDescripcion.Text = dataGridViewRecursos.CurrentRow.Cells["descripcion"].Value.ToString();
 
             tabRecursos.SelectedTab = tabPage1;
-            buttonGuardar.Text = "Actualizar";
+            buttonGuardar.Text = "ACTUALIZAR";
 
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)
         {
-            int codigoR = Convert.ToInt32(dataGridViewRecursos.CurrentRow.Cells["idrecurso"].Value.ToString());
+            int codigoR = Convert.ToInt32(dataGridViewRecursos.CurrentRow.Cells["idrecursos"].Value.ToString());
 
             try
             {

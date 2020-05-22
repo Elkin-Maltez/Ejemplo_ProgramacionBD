@@ -100,7 +100,7 @@ namespace capaPresentacionWF3
             textBoxMensaje.Text = dataGridViewComentario.CurrentRow.Cells["mensaje"].Value.ToString();
 
             tabComentario.SelectedTab = tabPage1;
-            buttonGuardar.Text = "Actualizar";
+            buttonGuardar.Text = "ACTUALIZAR";
         }
 
         private void buttonEliminar_Click(object sender, EventArgs e)
