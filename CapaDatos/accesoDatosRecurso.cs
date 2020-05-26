@@ -17,7 +17,7 @@ namespace CapaDatos
         SqlCommand cm = null;
         int indicador = 0;
         SqlDataReader dr = null;
-        List<Recurso> listaRecurso= null;
+        List<Recurso> listaRecurso = null;
 
         public int insertarRecurso(Recurso re)
         {
@@ -128,8 +128,8 @@ namespace CapaDatos
 
                 cm = new SqlCommand("Recurs", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("@idrecursos", re.idrecursos);
-                cm.Parameters.AddWithValue("@nombrer", "");
+                cm.Parameters.AddWithValue("@idrecursos", "");
+                cm.Parameters.AddWithValue("@nombrer", re.nombrer);
                 cm.Parameters.AddWithValue("@codigo", "");
                 cm.Parameters.AddWithValue("@descripcion", re.descripcion);
 

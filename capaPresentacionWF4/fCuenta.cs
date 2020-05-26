@@ -30,6 +30,7 @@ namespace capaPresentacionWF4
                    Cuenta objetoCuenta = new Cuenta();
                     objetoCuenta.nombreuser = textBoxNombreUsuario.Text;
                     objetoCuenta.clave = textBoxClave.Text;
+                    objetoCuenta.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
 
                     if (logicaNCt.insertarCuentas(objetoCuenta) > 0)
                     {
@@ -37,6 +38,8 @@ namespace capaPresentacionWF4
                         dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
                         textBoxNombreUsuario.Text = "";
                         textBoxClave.Text = "";
+                        textBoxIdUsuario.Text = "";
+
                         tabCuenta.SelectedTab = tabPage2;
                     }
                     else
@@ -57,6 +60,8 @@ namespace capaPresentacionWF4
                         dataGridViewCuenta.DataSource = logicaNCt.listarCuentas();
                         textBoxNombreUsuario.Text = "";
                         textBoxClave.Text = "";
+                        textBoxIdUsuario.Text = "";
+
                         tabCuenta.SelectedTab = tabPage2;
                     }
                     else
@@ -88,7 +93,7 @@ namespace capaPresentacionWF4
             textBoxId.Text = dataGridViewCuenta.CurrentRow.Cells["idcuenta"].Value.ToString();
             textBoxNombreUsuario.Text = dataGridViewCuenta.CurrentRow.Cells["nombreuser"].Value.ToString();
             textBoxClave.Text = dataGridViewCuenta.CurrentRow.Cells["clave"].Value.ToString();
-
+           
             tabCuenta.SelectedTab = tabPage1;
             buttonGuardar.Text = "ACTUALIZAR";
         }
@@ -112,6 +117,12 @@ namespace capaPresentacionWF4
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Cuenta> listaCuenta = logicaNCt.BuscarCuentas(textBoxBuscar.Text);
+            dataGridViewCuenta.DataSource = listaCuenta;
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Cuenta> listaCuenta = logicaNCt.BuscarCuentas(textBoxBuscar.Text);
             dataGridViewCuenta.DataSource = listaCuenta;

@@ -129,8 +129,8 @@ namespace CapaDatos
 
                 cm = new SqlCommand("Comentar", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("@idcomentario", co.idcomentario);
-                cm.Parameters.AddWithValue("@nombres", "");
+                cm.Parameters.AddWithValue("@idcomentario", "");
+                cm.Parameters.AddWithValue("@nombres", co.nombres);
                 cm.Parameters.AddWithValue("@correo", "");
                 cm.Parameters.AddWithValue("@telefono", "");
                 cm.Parameters.AddWithValue("@mensaje", co.mensaje);

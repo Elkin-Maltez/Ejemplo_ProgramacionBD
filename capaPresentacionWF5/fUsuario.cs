@@ -43,6 +43,7 @@ namespace capaPresentacionWF5
                         textBoxApellido.Text = "";
                         textBoxEmail.Text = "";
                         textBoxTelefono.Text = "";
+
                         tabUsuario.SelectedTab = tabPage2;
                     }
                     else
@@ -69,6 +70,7 @@ namespace capaPresentacionWF5
                         textBoxApellido.Text = "";
                         textBoxEmail.Text = "";
                         textBoxTelefono.Text = "";
+
                         tabUsuario.SelectedTab = tabPage2;
                     }
                     else
@@ -127,6 +129,12 @@ namespace capaPresentacionWF5
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Usuario> listaUsuario = logicaNU.BuscarUsuario(textBoxBuscar.Text);
+            dataGridViewUsuario.DataSource = listaUsuario;
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Usuario> listaUsuario = logicaNU.BuscarUsuario(textBoxBuscar.Text);
             dataGridViewUsuario.DataSource = listaUsuario;

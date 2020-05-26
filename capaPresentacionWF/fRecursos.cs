@@ -40,6 +40,7 @@ namespace capaPresentacionWF
                         textBoxNombrer.Text = "";
                         textBoxDescripcion.Text = "";
                         textBoxCodigo.Text = "";
+
                         tabRecursos.SelectedTab = tabPage2;
                     }
                     else
@@ -62,6 +63,7 @@ namespace capaPresentacionWF
                         textBoxNombrer.Text = "";
                         textBoxDescripcion.Text = "";
                         textBoxCodigo.Text = "";
+
                         tabRecursos.SelectedTab = tabPage2;
                     }
                     else
@@ -119,6 +121,12 @@ namespace capaPresentacionWF
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Recurso> listaRecursos = logicaNR.BuscarRecurso(textBoxBuscar.Text);
+            dataGridViewRecursos.DataSource = listaRecursos;
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Recurso> listaRecursos = logicaNR.BuscarRecurso(textBoxBuscar.Text);
             dataGridViewRecursos.DataSource = listaRecursos;

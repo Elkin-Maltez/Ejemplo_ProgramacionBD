@@ -263,6 +263,7 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(329, 26);
             this.textBoxBuscar.TabIndex = 1;
+            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // labelBuscar
             // 

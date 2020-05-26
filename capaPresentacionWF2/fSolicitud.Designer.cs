@@ -58,6 +58,10 @@
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
+            this.textBoxIdRecurso = new System.Windows.Forms.TextBox();
+            this.labelIdRecurso = new System.Windows.Forms.Label();
+            this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
+            this.labelIdUsuario = new System.Windows.Forms.Label();
             this.tabSolicitud.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -77,6 +81,10 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.tabPage1.Controls.Add(this.textBoxIdUsuario);
+            this.tabPage1.Controls.Add(this.labelIdUsuario);
+            this.tabPage1.Controls.Add(this.textBoxIdRecurso);
+            this.tabPage1.Controls.Add(this.labelIdRecurso);
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.textBoxAsignatura);
             this.tabPage1.Controls.Add(this.textBoxCarrera);
@@ -108,7 +116,7 @@
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonGuardar.Location = new System.Drawing.Point(317, 331);
+            this.buttonGuardar.Location = new System.Drawing.Point(303, 371);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(231, 43);
             this.buttonGuardar.TabIndex = 29;
@@ -119,7 +127,7 @@
             // 
             // textBoxAsignatura
             // 
-            this.textBoxAsignatura.Location = new System.Drawing.Point(571, 239);
+            this.textBoxAsignatura.Location = new System.Drawing.Point(571, 238);
             this.textBoxAsignatura.Multiline = true;
             this.textBoxAsignatura.Name = "textBoxAsignatura";
             this.textBoxAsignatura.Size = new System.Drawing.Size(203, 26);
@@ -127,7 +135,7 @@
             // 
             // textBoxCarrera
             // 
-            this.textBoxCarrera.Location = new System.Drawing.Point(571, 196);
+            this.textBoxCarrera.Location = new System.Drawing.Point(571, 195);
             this.textBoxCarrera.Multiline = true;
             this.textBoxCarrera.Name = "textBoxCarrera";
             this.textBoxCarrera.Size = new System.Drawing.Size(203, 26);
@@ -135,7 +143,7 @@
             // 
             // textBoxHoraFinal
             // 
-            this.textBoxHoraFinal.Location = new System.Drawing.Point(571, 154);
+            this.textBoxHoraFinal.Location = new System.Drawing.Point(571, 153);
             this.textBoxHoraFinal.Multiline = true;
             this.textBoxHoraFinal.Name = "textBoxHoraFinal";
             this.textBoxHoraFinal.Size = new System.Drawing.Size(203, 26);
@@ -143,7 +151,7 @@
             // 
             // textBoxHoraInicio
             // 
-            this.textBoxHoraInicio.Location = new System.Drawing.Point(571, 112);
+            this.textBoxHoraInicio.Location = new System.Drawing.Point(571, 111);
             this.textBoxHoraInicio.Multiline = true;
             this.textBoxHoraInicio.Name = "textBoxHoraInicio";
             this.textBoxHoraInicio.Size = new System.Drawing.Size(203, 26);
@@ -194,7 +202,7 @@
             this.labelAsignatura.AutoSize = true;
             this.labelAsignatura.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelAsignatura.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelAsignatura.Location = new System.Drawing.Point(443, 243);
+            this.labelAsignatura.Location = new System.Drawing.Point(443, 242);
             this.labelAsignatura.Name = "labelAsignatura";
             this.labelAsignatura.Size = new System.Drawing.Size(113, 24);
             this.labelAsignatura.TabIndex = 19;
@@ -205,7 +213,7 @@
             this.labelCarrera.AutoSize = true;
             this.labelCarrera.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelCarrera.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelCarrera.Location = new System.Drawing.Point(443, 200);
+            this.labelCarrera.Location = new System.Drawing.Point(443, 199);
             this.labelCarrera.Name = "labelCarrera";
             this.labelCarrera.Size = new System.Drawing.Size(80, 24);
             this.labelCarrera.TabIndex = 18;
@@ -216,7 +224,7 @@
             this.labelHoraFinal.AutoSize = true;
             this.labelHoraFinal.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHoraFinal.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelHoraFinal.Location = new System.Drawing.Point(443, 158);
+            this.labelHoraFinal.Location = new System.Drawing.Point(443, 157);
             this.labelHoraFinal.Name = "labelHoraFinal";
             this.labelHoraFinal.Size = new System.Drawing.Size(118, 24);
             this.labelHoraFinal.TabIndex = 17;
@@ -227,7 +235,7 @@
             this.labelHoraInicio.AutoSize = true;
             this.labelHoraInicio.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelHoraInicio.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelHoraInicio.Location = new System.Drawing.Point(443, 116);
+            this.labelHoraInicio.Location = new System.Drawing.Point(443, 115);
             this.labelHoraInicio.Name = "labelHoraInicio";
             this.labelHoraInicio.Size = new System.Drawing.Size(122, 24);
             this.labelHoraInicio.TabIndex = 16;
@@ -381,6 +389,7 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(329, 26);
             this.textBoxBuscar.TabIndex = 8;
+            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // labelBuscar
             // 
@@ -392,6 +401,44 @@
             this.labelBuscar.Size = new System.Drawing.Size(75, 24);
             this.labelBuscar.TabIndex = 7;
             this.labelBuscar.Text = "Buscar";
+            // 
+            // textBoxIdRecurso
+            // 
+            this.textBoxIdRecurso.Location = new System.Drawing.Point(167, 316);
+            this.textBoxIdRecurso.Multiline = true;
+            this.textBoxIdRecurso.Name = "textBoxIdRecurso";
+            this.textBoxIdRecurso.Size = new System.Drawing.Size(233, 26);
+            this.textBoxIdRecurso.TabIndex = 31;
+            // 
+            // labelIdRecurso
+            // 
+            this.labelIdRecurso.AutoSize = true;
+            this.labelIdRecurso.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdRecurso.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdRecurso.Location = new System.Drawing.Point(57, 318);
+            this.labelIdRecurso.Name = "labelIdRecurso";
+            this.labelIdRecurso.Size = new System.Drawing.Size(104, 24);
+            this.labelIdRecurso.TabIndex = 30;
+            this.labelIdRecurso.Text = "IdRecurso";
+            // 
+            // textBoxIdUsuario
+            // 
+            this.textBoxIdUsuario.Location = new System.Drawing.Point(551, 316);
+            this.textBoxIdUsuario.Multiline = true;
+            this.textBoxIdUsuario.Name = "textBoxIdUsuario";
+            this.textBoxIdUsuario.Size = new System.Drawing.Size(203, 26);
+            this.textBoxIdUsuario.TabIndex = 33;
+            // 
+            // labelIdUsuario
+            // 
+            this.labelIdUsuario.AutoSize = true;
+            this.labelIdUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdUsuario.Location = new System.Drawing.Point(440, 318);
+            this.labelIdUsuario.Name = "labelIdUsuario";
+            this.labelIdUsuario.Size = new System.Drawing.Size(105, 24);
+            this.labelIdUsuario.TabIndex = 32;
+            this.labelIdUsuario.Text = "IdUsuario";
             // 
             // fSolicitud
             // 
@@ -444,6 +491,10 @@
         private System.Windows.Forms.Button buttonBuscar;
         private System.Windows.Forms.TextBox textBoxBuscar;
         private System.Windows.Forms.Label labelBuscar;
+        private System.Windows.Forms.TextBox textBoxIdUsuario;
+        private System.Windows.Forms.Label labelIdUsuario;
+        private System.Windows.Forms.TextBox textBoxIdRecurso;
+        private System.Windows.Forms.Label labelIdRecurso;
     }
 }
 

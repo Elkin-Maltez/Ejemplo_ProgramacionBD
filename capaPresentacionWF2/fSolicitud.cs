@@ -36,6 +36,8 @@ namespace capaPresentacionWF2
                     objetoSolicitud.horafinal = Convert.ToDateTime(textBoxHoraFinal.Text);
                     objetoSolicitud.carrera = textBoxCarrera.Text;
                     objetoSolicitud.asignatura = textBoxAsignatura.Text;
+                    objetoSolicitud.idrecursos = Convert.ToInt32(textBoxIdRecurso.Text);
+                    objetoSolicitud.idusuario = Convert.ToInt32(textBoxIdUsuario.Text);
 
                     if (logicaNS.insertarSolicitud(objetoSolicitud)> 0)
                     {
@@ -49,6 +51,9 @@ namespace capaPresentacionWF2
                         textBoxHoraFinal.Text = "";
                         textBoxCarrera.Text = "";
                         textBoxAsignatura.Text = "";
+                        textBoxIdRecurso.Text = "";
+                        textBoxIdUsuario.Text = "";
+
                         tabSolicitud.SelectedTab = tabPage2;
                     }
                     else
@@ -68,7 +73,7 @@ namespace capaPresentacionWF2
                     objetoSolicitud.horafinal = Convert.ToDateTime(textBoxHoraFinal.Text);
                     objetoSolicitud.carrera = textBoxCarrera.Text;
                     objetoSolicitud.asignatura = textBoxAsignatura.Text;
-
+                    
                     if (logicaNS.editarSolicitud(objetoSolicitud) > 0)
                     {
                         MessageBox.Show("Actualizado con éxito");
@@ -81,6 +86,7 @@ namespace capaPresentacionWF2
                         textBoxHoraFinal.Text = "";
                         textBoxCarrera.Text = "";
                         textBoxAsignatura.Text = "";
+                        
                         tabSolicitud.SelectedTab = tabPage2;
                     }
                     else
@@ -118,7 +124,7 @@ namespace capaPresentacionWF2
             textBoxHoraFinal.Text = dataGridViewSolicitud.CurrentRow.Cells["horafinal"].Value.ToString();
             textBoxCarrera.Text = dataGridViewSolicitud.CurrentRow.Cells["carrera"].Value.ToString();
             textBoxAsignatura.Text = dataGridViewSolicitud.CurrentRow.Cells["asignatura"].Value.ToString();
-
+           
             tabSolicitud.SelectedTab = tabPage1;
             buttonGuardar.Text = "ACTUALIZAR";
         }
@@ -142,6 +148,12 @@ namespace capaPresentacionWF2
         }
 
         private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+            List<Solicitud> listaSolicitud = logicaNS.BuscarSolicitud(textBoxBuscar.Text);
+            dataGridViewSolicitud.DataSource = listaSolicitud;
+        }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Solicitud> listaSolicitud = logicaNS.BuscarSolicitud(textBoxBuscar.Text);
             dataGridViewSolicitud.DataSource = listaSolicitud;

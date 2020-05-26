@@ -30,7 +30,8 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idcuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", ct.nombreuser);
                 cm.Parameters.AddWithValue("@clave", ct.clave);
-                
+                cm.Parameters.AddWithValue("@idusuario", ct.idusuario);
+
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
                 cm.ExecuteNonQuery();
@@ -60,6 +61,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idcuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", "");
                 cm.Parameters.AddWithValue("@clave", "");
+                cm.Parameters.AddWithValue("@idusuario", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -72,6 +74,7 @@ namespace CapaDatos
                     c.idcuenta = Convert.ToInt32(dr["idcuenta"].ToString());
                     c.nombreuser = dr["nombreuser"].ToString();
                     c.clave = dr["clave"].ToString();
+                    c.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
                     listaCuenta.Add(c);
                 }
 
@@ -99,6 +102,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idcuenta", idcuent);
                 cm.Parameters.AddWithValue("@nombreuser", "");
                 cm.Parameters.AddWithValue("@clave", "");
+                cm.Parameters.AddWithValue("@idusuario", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -128,6 +132,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idcuenta", cu.idcuenta);
                 cm.Parameters.AddWithValue("@nombreuser", "");
                 cm.Parameters.AddWithValue("@clave", cu.clave);
+                cm.Parameters.AddWithValue("@idusuario", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -157,6 +162,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idcuenta", "");
                 cm.Parameters.AddWithValue("@nombreuser", dato);
                 cm.Parameters.AddWithValue("@clave", dato);
+                cm.Parameters.AddWithValue("@idusuario", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
@@ -168,6 +174,7 @@ namespace CapaDatos
                     c.idcuenta = Convert.ToInt32(dr["idcuenta"].ToString());
                     c.nombreuser = dr["nombreuser"].ToString();
                     c.clave = dr["clave"].ToString();
+                    c.idusuario = Convert.ToInt32(dr["idusuario"].ToString());
                     listaCuenta.Add(c);
                 }
 

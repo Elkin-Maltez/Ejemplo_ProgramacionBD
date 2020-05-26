@@ -46,6 +46,8 @@
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
+            this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
+            this.labelIdUsuario = new System.Windows.Forms.Label();
             this.tabCuenta.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -65,6 +67,8 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tabPage1.Controls.Add(this.textBoxIdUsuario);
+            this.tabPage1.Controls.Add(this.labelIdUsuario);
             this.tabPage1.Controls.Add(this.buttonGuardar);
             this.tabPage1.Controls.Add(this.textBoxClave);
             this.tabPage1.Controls.Add(this.textBoxNombreUsuario);
@@ -84,7 +88,7 @@
             // 
             this.buttonGuardar.Font = new System.Drawing.Font("Modern No. 20", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonGuardar.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.buttonGuardar.Location = new System.Drawing.Point(284, 312);
+            this.buttonGuardar.Location = new System.Drawing.Point(271, 355);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(232, 44);
             this.buttonGuardar.TabIndex = 48;
@@ -242,6 +246,7 @@
             this.textBoxBuscar.Name = "textBoxBuscar";
             this.textBoxBuscar.Size = new System.Drawing.Size(329, 26);
             this.textBoxBuscar.TabIndex = 22;
+            this.textBoxBuscar.TextChanged += new System.EventHandler(this.textBoxBuscar_TextChanged);
             // 
             // labelBuscar
             // 
@@ -253,6 +258,25 @@
             this.labelBuscar.Size = new System.Drawing.Size(75, 24);
             this.labelBuscar.TabIndex = 21;
             this.labelBuscar.Text = "Buscar";
+            // 
+            // textBoxIdUsuario
+            // 
+            this.textBoxIdUsuario.Location = new System.Drawing.Point(362, 278);
+            this.textBoxIdUsuario.Multiline = true;
+            this.textBoxIdUsuario.Name = "textBoxIdUsuario";
+            this.textBoxIdUsuario.Size = new System.Drawing.Size(233, 26);
+            this.textBoxIdUsuario.TabIndex = 50;
+            // 
+            // labelIdUsuario
+            // 
+            this.labelIdUsuario.AutoSize = true;
+            this.labelIdUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdUsuario.Location = new System.Drawing.Point(167, 280);
+            this.labelIdUsuario.Name = "labelIdUsuario";
+            this.labelIdUsuario.Size = new System.Drawing.Size(112, 24);
+            this.labelIdUsuario.TabIndex = 49;
+            this.labelIdUsuario.Text = "Id Usuario";
             // 
             // fCuenta
             // 
@@ -293,6 +317,8 @@
         private System.Windows.Forms.Label labelNombreUsuario;
         private System.Windows.Forms.Label labelIdCuenta;
         private System.Windows.Forms.Label labelCuenta;
+        private System.Windows.Forms.TextBox textBoxIdUsuario;
+        private System.Windows.Forms.Label labelIdUsuario;
     }
 }
 

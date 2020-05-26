@@ -126,5 +126,11 @@ namespace capaPresentacionWF3
             List<Comentario> listaComentario = logicaNC.BuscarComentarios(textBoxBuscar.Text);
             dataGridViewComentario.DataSource = listaComentario;
         }
+
+        private void textBoxBuscar_TextChanged(object sender, EventArgs e)
+        {
+            List<Comentario> listaComentario = logicaNC.BuscarComentarios(textBoxBuscar.Text);
+            dataGridViewComentario.DataSource = listaComentario;
+        }
     }
 }
