@@ -7,15 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CapaNegocio;
 
 namespace capaPresentacionWF
 {
     public partial class MDIRecursos : Form
     {
         private int childFormNumber = 0;
-
-        logicaNegocioRespaldoBD lN = new logicaNegocioRespaldoBD();
        
         public MDIRecursos()
         {
@@ -60,19 +57,5 @@ namespace capaPresentacionWF
             
         }
         
-        private void respaldoBDToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (lN.respaldarBD() > 0)
-                {
-                    MessageBox.Show("Respaldo realizado con exito");
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Error al realizar el respaldo");
-            }
-        }
     }
 }

@@ -102,14 +102,14 @@
             this.usuariosToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usuariosToolStripMenuItem.Text = "&Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.OpenFile);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
             // 
             // cuentaToolStripMenuItem
             // 
@@ -117,7 +117,7 @@
             this.cuentaToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.cuentaToolStripMenuItem.Name = "cuentaToolStripMenuItem";
             this.cuentaToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.cuentaToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
+            this.cuentaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.cuentaToolStripMenuItem.Text = "&Cuenta";
             // 
             // SolicitudMenu
@@ -153,7 +153,6 @@
             this.respaldoBDToolStripMenuItem.Name = "respaldoBDToolStripMenuItem";
             this.respaldoBDToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.respaldoBDToolStripMenuItem.Text = "Respaldo BD";
-            this.respaldoBDToolStripMenuItem.Click += new System.EventHandler(this.respaldoBDToolStripMenuItem_Click);
             // 
             // helpMenu
             // 
