@@ -120,13 +120,7 @@ namespace capaPresentacionWF3
                 MessageBox.Show("ERROR al eliminar comentario");
             }
         }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            List<Comentario> listaComentario = logicaNC.BuscarComentarios(textBoxBuscar.Text);
-            dataGridViewComentario.DataSource = listaComentario;
-        }
-
+        
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Comentario> listaComentario = logicaNC.BuscarComentarios(textBoxBuscar.Text);

@@ -44,7 +44,6 @@
     <Compile Include="accesoDatosComentario.cs" />
     <Compile Include="accesoDatosCuenta.cs" />
     <Compile Include="accesoDatosRecurso.cs" />
-    <Compile Include="accesoDatosRespaldoBD.cs" />
     <Compile Include="accesoDatosSolicitud.cs" />
     <Compile Include="accesoDatosUsuario.cs" />
     <Compile Include="Conexion.cs" />

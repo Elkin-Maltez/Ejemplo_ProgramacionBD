@@ -115,13 +115,7 @@ namespace capaPresentacionWF4
                 MessageBox.Show("ERROR al eliminar cuenta");
             }
         }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            List<Cuenta> listaCuenta = logicaNCt.BuscarCuentas(textBoxBuscar.Text);
-            dataGridViewCuenta.DataSource = listaCuenta;
-        }
-
+        
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Cuenta> listaCuenta = logicaNCt.BuscarCuentas(textBoxBuscar.Text);

@@ -30,6 +30,8 @@
         {
             this.tabCuenta = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
+            this.labelIdUsuario = new System.Windows.Forms.Label();
             this.buttonGuardar = new System.Windows.Forms.Button();
             this.textBoxClave = new System.Windows.Forms.TextBox();
             this.textBoxNombreUsuario = new System.Windows.Forms.TextBox();
@@ -46,8 +48,6 @@
             this.buttonBuscar = new System.Windows.Forms.Button();
             this.textBoxBuscar = new System.Windows.Forms.TextBox();
             this.labelBuscar = new System.Windows.Forms.Label();
-            this.textBoxIdUsuario = new System.Windows.Forms.TextBox();
-            this.labelIdUsuario = new System.Windows.Forms.Label();
             this.tabCuenta.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -83,6 +83,25 @@
             this.tabPage1.Size = new System.Drawing.Size(793, 426);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Nuevo";
+            // 
+            // textBoxIdUsuario
+            // 
+            this.textBoxIdUsuario.Location = new System.Drawing.Point(362, 278);
+            this.textBoxIdUsuario.Multiline = true;
+            this.textBoxIdUsuario.Name = "textBoxIdUsuario";
+            this.textBoxIdUsuario.Size = new System.Drawing.Size(233, 26);
+            this.textBoxIdUsuario.TabIndex = 50;
+            // 
+            // labelIdUsuario
+            // 
+            this.labelIdUsuario.AutoSize = true;
+            this.labelIdUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.labelIdUsuario.Location = new System.Drawing.Point(167, 280);
+            this.labelIdUsuario.Name = "labelIdUsuario";
+            this.labelIdUsuario.Size = new System.Drawing.Size(112, 24);
+            this.labelIdUsuario.TabIndex = 49;
+            this.labelIdUsuario.Text = "Id Usuario";
             // 
             // buttonGuardar
             // 
@@ -237,7 +256,6 @@
             this.buttonBuscar.TabIndex = 23;
             this.buttonBuscar.Text = "BUSCAR";
             this.buttonBuscar.UseVisualStyleBackColor = true;
-            this.buttonBuscar.Click += new System.EventHandler(this.buttonBuscar_Click);
             // 
             // textBoxBuscar
             // 
@@ -258,25 +276,6 @@
             this.labelBuscar.Size = new System.Drawing.Size(75, 24);
             this.labelBuscar.TabIndex = 21;
             this.labelBuscar.Text = "Buscar";
-            // 
-            // textBoxIdUsuario
-            // 
-            this.textBoxIdUsuario.Location = new System.Drawing.Point(362, 278);
-            this.textBoxIdUsuario.Multiline = true;
-            this.textBoxIdUsuario.Name = "textBoxIdUsuario";
-            this.textBoxIdUsuario.Size = new System.Drawing.Size(233, 26);
-            this.textBoxIdUsuario.TabIndex = 50;
-            // 
-            // labelIdUsuario
-            // 
-            this.labelIdUsuario.AutoSize = true;
-            this.labelIdUsuario.Font = new System.Drawing.Font("Modern No. 20", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIdUsuario.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelIdUsuario.Location = new System.Drawing.Point(167, 280);
-            this.labelIdUsuario.Name = "labelIdUsuario";
-            this.labelIdUsuario.Size = new System.Drawing.Size(112, 24);
-            this.labelIdUsuario.TabIndex = 49;
-            this.labelIdUsuario.Text = "Id Usuario";
             // 
             // fCuenta
             // 

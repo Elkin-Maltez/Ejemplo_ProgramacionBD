@@ -137,8 +137,8 @@ namespace CapaDatos
 
                 cm = new SqlCommand("Usuar", cnx);
                 cm.Parameters.AddWithValue("@b", 4);
-                cm.Parameters.AddWithValue("@idusuario", us.idusuario);
-                cm.Parameters.AddWithValue("@cedula", "");
+                cm.Parameters.AddWithValue("@idusuario", "");
+                cm.Parameters.AddWithValue("@cedula", us.cedula);
                 cm.Parameters.AddWithValue("@nombres", "");
                 cm.Parameters.AddWithValue("@apellidos", "");
                 cm.Parameters.AddWithValue("@email", "");

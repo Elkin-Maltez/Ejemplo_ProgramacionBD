@@ -119,13 +119,7 @@ namespace capaPresentacionWF
                 MessageBox.Show("ERROR al eliminar recurso");
             }
         }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            List<Recurso> listaRecursos = logicaNR.BuscarRecurso(textBoxBuscar.Text);
-            dataGridViewRecursos.DataSource = listaRecursos;
-        }
-
+        
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Recurso> listaRecursos = logicaNR.BuscarRecurso(textBoxBuscar.Text);

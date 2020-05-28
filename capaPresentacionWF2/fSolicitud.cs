@@ -146,13 +146,7 @@ namespace capaPresentacionWF2
                 MessageBox.Show("ERROR al eliminar solicitud");
             }
         }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            List<Solicitud> listaSolicitud = logicaNS.BuscarSolicitud(textBoxBuscar.Text);
-            dataGridViewSolicitud.DataSource = listaSolicitud;
-        }
-
+        
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Solicitud> listaSolicitud = logicaNS.BuscarSolicitud(textBoxBuscar.Text);

@@ -162,7 +162,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@nombrer", dato);
                 cm.Parameters.AddWithValue("@codigo", "");
-                cm.Parameters.AddWithValue("@descripcion", dato);
+                cm.Parameters.AddWithValue("@descripcion", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();

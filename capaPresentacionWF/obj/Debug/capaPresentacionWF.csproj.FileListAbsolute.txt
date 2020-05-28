@@ -15,4 +15,3 @@ C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF\obj
 C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF\obj\Debug\capaPresentacionWF.csproj.CopyComplete
 C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF\obj\Debug\capaPresentacionWF.exe
 C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF\obj\Debug\capaPresentacionWF.pdb
-C:\Users\Elkin Maltez\source\repos\Ejemplo_ProgramacionBD\capaPresentacionWF\obj\Debug\capaPresentacionWF.MDIRecursos.resources

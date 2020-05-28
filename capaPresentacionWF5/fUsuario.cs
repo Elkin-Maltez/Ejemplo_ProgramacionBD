@@ -127,13 +127,7 @@ namespace capaPresentacionWF5
                 MessageBox.Show("ERROR al eliminar usuario");
             }
         }
-
-        private void buttonBuscar_Click(object sender, EventArgs e)
-        {
-            List<Usuario> listaUsuario = logicaNU.BuscarUsuario(textBoxBuscar.Text);
-            dataGridViewUsuario.DataSource = listaUsuario;
-        }
-
+        
         private void textBoxBuscar_TextChanged(object sender, EventArgs e)
         {
             List<Usuario> listaUsuario = logicaNU.BuscarUsuario(textBoxBuscar.Text);
