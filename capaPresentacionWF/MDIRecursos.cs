@@ -7,14 +7,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using CapaNegocio;
 namespace capaPresentacionWF
 {
-    public partial class MDIRecurso : Form
+    public partial class MDIRecursos : Form
     {
+        logicaNegocioRespaldo lN = new logicaNegocioRespaldo();
+
         private int childFormNumber = 0;
 
-        public MDIRecurso()
+        public MDIRecursos()
         {
             InitializeComponent();
         }
@@ -109,7 +111,6 @@ namespace capaPresentacionWF
             if (Application.OpenForms["fRecursos"] != null)
             {
                 Application.OpenForms["fRecursos"].Activate();
-
             }
             else
             {
@@ -121,7 +122,31 @@ namespace capaPresentacionWF
 
         private void salirtoolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            if (PreClosingConfirmation() == System.Windows.Forms.DialogResult.Yes)
+            {
+                Dispose(true);
+                Application.Exit();
+            }
+        }
+        private DialogResult PreClosingConfirmation()
+        {
+            DialogResult res = System.Windows.Forms.MessageBox.Show("¿Esta seguro de que quiere cerrar la aplicación?", "Cerrar la Aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            return res;
+        }
+
+        private void respaldoBDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lN.respaldarBD() > 0)
+                {
+                    MessageBox.Show("Respaldo realizado con éxito");
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error al realizar el respaldo");
+            }
         }
     }
 }

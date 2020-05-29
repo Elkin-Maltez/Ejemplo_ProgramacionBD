@@ -199,7 +199,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@horainicio", "");
                 cm.Parameters.AddWithValue("@horafinal", "");
                 cm.Parameters.AddWithValue("@carrera", "");
-                cm.Parameters.AddWithValue("@asignatura", dato);
+                cm.Parameters.AddWithValue("@asignatura", "");
                 cm.Parameters.AddWithValue("@idrecursos", "");
                 cm.Parameters.AddWithValue("@idusuario", "");
 

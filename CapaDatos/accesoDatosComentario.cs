@@ -165,7 +165,7 @@ namespace CapaDatos
                 cm.Parameters.AddWithValue("@nombres", dato);
                 cm.Parameters.AddWithValue("@correo", "");
                 cm.Parameters.AddWithValue("@telefono", "");
-                cm.Parameters.AddWithValue("@mensaje", dato);
+                cm.Parameters.AddWithValue("@mensaje", "");
 
                 cm.CommandType = CommandType.StoredProcedure;
                 cnx.Open();
